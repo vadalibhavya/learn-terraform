@@ -49,3 +49,10 @@ variable "class" {}
 output "class" {
     value = "the class that is in is - ${var.class}"
 }
+# terraform apply -auto-approve -var-file=class.auto.tfvars
+# terraform apply -auto-approve
+
+variable "trainer"{}
+output "trainer" {
+    value = "the trainer is - ${var.trainer}"
+}
