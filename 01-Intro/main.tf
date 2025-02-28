@@ -49,7 +49,7 @@ variable "class" {}
 output "class" {
     value = "the class that is in is - ${var.class}"
 }
-# terraform apply -auto-approve -var-file=class.auto.tfvars
+# terraform apply -auto-approve -var-file=data.tfvars # this will automatically load the data.tfvars and will override the class variable
 # terraform apply -auto-approve
 
 variable "trainer"{}
