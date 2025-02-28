@@ -37,3 +37,8 @@ variable "person" {
 output "name" {
     value = "Name is ${var.person["name"]}, Age is ${var.person["age"]}, City is ${var.person["city"]}"
 }
+
+variable "input" {}
+output "input" {
+    value = var.input
+}
