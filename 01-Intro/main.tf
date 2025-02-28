@@ -47,5 +47,5 @@ output "input" {
 
 variable "class" {}
 output "class" {
-    value = var.class
+    value = "the class that is in is - ${var.class}"
 }
